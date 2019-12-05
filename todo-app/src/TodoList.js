@@ -19,7 +19,7 @@ function TodoList({ todos, removeTodo, toggleTodo, editTodo }) {
                      toggleTodo={toggleTodo}
                      editTodo={editTodo}
                   />
-                  <Divider />
+                  {i < todos.length - 1 && <Divider />}
                </>
             ))}
          </List>
