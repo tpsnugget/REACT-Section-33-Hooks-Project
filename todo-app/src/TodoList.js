@@ -9,7 +9,7 @@ function TodoList(props) {
    return (
       <Paper>
          <List>
-            {props.todos.map(todo => (
+            {props.todos.map( (todo, i) => (
                <>
                   <ListItem>
                      <ListItemText>{todo.task}</ListItemText>
